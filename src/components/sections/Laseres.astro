@@ -1,0 +1,119 @@
+---
+import Section from "@/components/Section.astro";
+---
+
+<Section title="Láseres">
+  <p>
+    La tecnología láser se centra en la concentración de luz en forma de haces
+    muy pequeños y poderosos. El acrónimo se generalizó cuando la tecnología
+    pasó de las microondas a las ondasde luz. <br /><br />
+    El primer láser fue desarrollado por Theodore H. Maiman, científico de Hughes
+    Aircraft Company, de California. Dirigió un rayo de luz a cristales de rubí,
+    con una lámpara de xenón, y midió la radiación emitida por el rubí. Descubrió
+    que cuando la radiación emitida aumentaba de cierto umbral, se volvía en extremo
+    intensa, y muy direccional. Los láseres de uranio se dearrollaron en 1960, junto
+    con los de otros materiales de tierras raras. También en 1960, A. Javin de los
+    Bell Laboratories desarrolló el láser de helio. Los láseres de semiconductor
+    (diodos de inyección láser) se fabricaron en 1962, en General Electric, IBM y
+    Lincoln Laboratories.
+  </p>
+  <h3>Tipos de láser</h3>
+  <p>
+    Básicamente hay cuatro tipos de láser: de gas, líquido, sólido y de
+    semiconductor.
+  </p>
+  <ul>
+    <li>
+      <b>Láseres de gas</b>. Los láseres de gas usan una mezcla de helio y neón
+      encerrada en un tubo de vidrio. Cuando se descarga una corriente en el gas
+      se emite un flujo de ondas luminosas coherentes (de una frecuencia) a
+      través del acoplador de salida. La salida de onda luminosa continua es
+      monocromática (de un color).
+    </li>
+    <li>
+      <b>Láseres de líquido</b>. En estos láseres se usan colorantes orgánicos
+      encerrados en un tubo de vidrio, como medio activo. El colorante se hace
+      circular con una bomba dentro del tubo. Un pulso poderoso de luz excita al
+      colorante orgánico.
+    </li>
+    <li>
+      <b>Láseres de sólido</b>. En ellos se usa un cristal cilíndrico y macizo,
+      como el rubí, como medio activo. Cada extremo del rubí está pulido y
+      paralelo al otro. El rubí se excita con una lámpara de tungsteno conectada
+      a una fuente de poder de corriente alterna. La salida del láser es una
+      onda continua.
+    </li>
+    <li>
+      <b>Láseres de semiconductor</b>. Estos láseres se fabrican con
+      semiconductores de unión p-n y se suelen llamar diodos de láser de
+      inyección (ILD, de injection laser diode). El mecanismo de excitación es
+      un suministro de corriente directa que controla la cantidad de corriente
+      al medio activo. La luz de salida de un ILD se modula con facilidad, y eso
+      lo hace muy útil en muchas aplicaciones de comunicaciones electrónicas.
+    </li>
+  </ul>
+  <h3>Características de los láseres</h3>
+  <p>
+    Todas las clases de láser tienen varias características comunes: 1) todos
+    usan un material activo que convierte la energía en luz láser, 2) una fuente
+    de bombeo que proporciona la potencia o energía, 3) el sistema óptico para
+    dirigir el haz que se va a amplificar a través del material, 4) el sistema
+    óptico para dirigir el haz en forma de un cono de divergencia angosto y
+    potente, 5) un mecanismo de retroalimentación para obtener funcionamiento
+    continuo, y 6) un acoplador de salida, para transmitir la potencia que sale
+    del láser. <br /><br />
+    La radiación de un láser es extremadamente intensa y direccionada. Cuando se
+    enfoca en forma de un haz capilar muy fino, puede concentrar su potencia. Si
+    se permitiera diverger al haz de luz, perdería la mayor parte de su potencia.
+  </p>
+  <h3>Construcción de los láseres</h3>
+  <p>
+    La fig. 2-17 muestra la construcción de un láser básico. Una fuente de poder
+    se conecta a un tubo de destello, que está enrollado sobre un tubo de vidrio
+    que contiene al medio activo. Un extremo del tubo de vidrio es una cara
+    pulida a espejo, 100% reflejante, para tener reflexión interna. El tubo de
+    destello se energiza con un pulso de disparo y produce un destello de luz de
+    gran intensidad (parecido a una lámpara de destello en fotografía). El
+    destello excita los átomos de cromo en el interior de la estructura
+    cristalina. El proceso de bombeo eleva la energía de los átomos de cromo
+    desde el estado fundamental hasta un estado excitado de energía. A
+    continuación, los iones decaen y pasan a un nivel intermedio de energía.
+    Cuando la población de iones en el nivel intermedio es mayor que la del
+    estado fundamental, sucede una inversión de poblaciones, que causa la acción
+    de láser (emisión). Después de cierto tiempo, los átomos excitados de cromo
+    caen al nivel fundamental de energía. En esta ocasión se emiten fotones. Un
+    fotón es un paquete de energía radiante. Los fotones emitidos chocan con
+    átomos y causan la emisión de otros dos fotones (de aquí el término “emisión
+    estimulada”). La frecuencia de la energía determina la intensidad de los
+    fotones: mayores frecuencias producen fotones de mayor intensidad.
+  </p>
+  <figure>
+    <img src="/public/figura17.png" alt="construcion de los laseres" />
+    <figcaption>FIGURA 2-17 Construcción de un láser</figcaption>
+  </figure>
+</Section>
+
+<style>
+  figure {
+    border: 1px solid #22afff;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  figure figcaption {
+    margin-top: 10px;
+    font-size: 90%;
+    color: #555;
+  }
+</style>

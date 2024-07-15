@@ -1,0 +1,166 @@
+---
+import { propagation } from "@contenido";
+import Section from "@/components/Section.astro";
+
+const {
+  equation01,
+  equation02,
+  equation03,
+  equation04,
+  equation05,
+  equation06,
+  equation07,
+  number01,
+  number02,
+} = propagation;
+---
+
+<Section title="Propagación de la luz">
+  <h3>La física de la luz</h3>
+  <p>
+    Aunque se puede analizar por completo el funcionamiento de las fibras
+    ópticas aplicando las ecuaciones de Maxwell, es una forma complicada por
+    necesidad. Para la mayoría de las aplicaciones prácticas, se puede usar el
+    trazado geométrico de ondas en lugar de las ecuaciones de Maxwell. Con el
+    trazado de rayos se obtienen resultados con exactitud suficiente. <br /><br
+    />
+    Un átomo tiene varios niveles de energía, o estados; el mínimo nivel es el estado
+    fundamental. Un nivel de energía mayor que el estado fundamental se llama estado
+    excitado. Si un átomo que tiene un nivel de energía decae a un nivel inferior,
+    la pérdida de energía (en electrón volts), se emite en forma de fotón. La energía
+    del fotón es igual a la diferencia entre las energías de los dos niveles. El
+    proceso de decaer de un nivel de energía a otro se llama decaimiento espontáneo
+    o emisión espontánea. <br /><br />
+    Los átomos pueden irradiarse mediante una fuente luminosa cuya energía sea igual
+    a la diferencia entre el estado fundamental y otro nivel de energía. Esto puede
+    hacer que un electrón cambie de uno a otro nivel de energía, absorbiendo energía
+    luminosa. El proceso de pasar de uno a otro nivel de energía se llama absorción.
+    Cuando se hace la transición de un nivel a otro, el átomo absorbe un paquete
+    de energía llamado fotón. Este proceso se parece al de la emisión.
+    <br /><br />
+    La energía absorbida o emitida (el fotón) es igual a la diferencia entre los
+    dos niveles de energía, esto es
+    {equation01}
+    en donde \( E_p \) es la enerdía del fotón. También
+    {equation02}
+    donde: <br />
+    \( h \) es la constante de Planck {number01}. <br />
+    \( f \) es la frecuenciade la luz emitida (hertz).
+  </p>
+  <h3>Velocidad de propagación</h3>
+  <p>
+    La energía electromagnética, como la luz, recorre aproximadamente
+    300,000,000 m/s en el espacio libre. También, la velocidad de propagación es
+    igual para todas las frecuencias de luz en el espacio libre. Sin embargo, se
+    ha demostrado que en materiales más densos que el espacio libre, la
+    velocidad se reduce. Cuando se reduce la velocidad de una onda
+    electromagnética al pasar de uno a otro medio de un material más denso, el
+    rayo de luz se refracta, o se dobla, hacia la normal. También, en materiales
+    más densos que el espacio libre, todas las frecuencias de la luz no se
+    propagan con la misma velocidad.
+  </p>
+  <h3>Refracción</h3>
+  <p>
+    La refracción ocurre cuando la luz pasa de un material a otro con diferente
+    densidad. Este cambio en la dirección de la luz es debido a la diferencia en
+    las velocidades de propagación de la luz en estos materiales. La refracción
+    prismática es responsable de fenómenos como los arco iris, donde la luz
+    blanca se divide en sus distintos colores debido a la refracción en gotitas
+    de agua.
+  </p>
+  <h3>Índice de refracción</h3>
+  <p>
+    El índice de refracción es la medida de cuánto se desvía un rayo de luz al
+    pasar entre dos materiales de distintas densidades. Esta desviación depende
+    de la relación entre la velocidad de la luz en el espacio libre (\(c\)) y la
+    velocidad de la luz en el material (\(v\)), expresada por la fórmula
+    {equation03}
+    donde \( c \) es la velocidad de la luz en el espacio libre (300,000,000 metros
+    por segundo) y \( v \) es la velocidad de la luz en el material específico.
+    <br /><br />
+    Aunque el índice de refracción puede variar con la frecuencia, esta variación
+    es insignificante para la mayoría de las aplicaciones y se omite generalmente.
+    <br /><br />
+    Se puede explicar la forma en que un rayo de luz se refracta al encontrar la
+    interfaz de dos materiales transmisores con índices de refracción distintos,
+    con la ley de Snell. Esa ley establece que
+    {equation04}
+    donde <br />
+    \( n_1 \) y \( n_2 \) son los índices de refracción de los materiales 1 y 2,
+    respectivamente. <br />
+    \( \theta_1 \) es el ángulo de incidencia. <br />
+    \( \theta_2 \) es el ángulo de refracción. <br /><br />
+    En la interfaz entre dos materiales, el rayo de luz puede refractarse hacia o
+    alejándose de la normal (línea perpendicular a la interfaz), dependiendo de los
+    valores de \( n_1 \) y \( n_2 \). Si el rayo pasa de un material más denso (mayor
+    índice de refracción) a uno menos denso (menor índice de refracción), se refractará
+    alejándose de la normal y el ángulo de refracción será mayor que el ángulo de
+    incidencia. Por el contrario, si pasa de un material menos denso a uno más denso,
+    se refractará hacia la normal.
+  </p>
+  <figure>
+    <img
+      src="/public/figura3.png"
+      alt="modelo para la ley de snell de refraccion"
+    />
+    <figcaption>
+      FIGURA 2-3 Modelo para la ley de Snell de refracción
+    </figcaption>
+  </figure>
+  <h3>Ángulo crítico</h3>
+  <figure>
+    <img src="/public/figura4.png" alt="refraccion en angulo critico" />
+    <figcaption>FIGURA 2-4 Refracción en ángulo crítico</figcaption>
+  </figure>
+  <p>
+    La fig. 2-4 muestra un caso en el que un rayo incidente forma un ángulo tal
+    que el ángulo de refracción es 90°, y el rayo refractado va por la interfaz.
+    Es importante observar que el rayo de luz va de un medio de mayor índice de
+    refracción a un medio con menor índice. De nuevo, si se aplica la ley de
+    Snell
+    {equation05}
+    Con {number02},
+    {equation06}
+    y
+    {equation07}
+    en donde \( \theta_c \) es el ángulo crítico.<br /><br />
+    El ángulo crítico se define como el ángulo de incidencia mínimo en el cual un
+    rayo de luz puede llegar a la interfaz entre dos medios y tener un ángulo de
+    refracción de 90° o mayor. Esta definición sólo se aplica cuando el rayo de luz
+    pasa de un medio más denso a uno menos denso. Si el ángulo de refracción es 90°
+    o menor, el rayo de luz no puede penetrar en el material menos denso. En consecuencia,
+    se produce la reflexión total en la interfaz, y el ángulo de reflexión es igual
+    al ángulo de incidencia. La fig. 2-5 muestra una comparación entre los ángulos
+    de refracción y de reflexión, cuando el ángulo de incidencia es menor que, o
+    mayor que el ángulo crítico.
+  </p>
+  <figure>
+    <img src="/public/figura5.png" alt="angulos de reflexion y de refraccion" />
+    <figcaption>FIGURA 2-5 Ángulos de reflexión y de refracción</figcaption>
+  </figure>
+</Section>
+
+<style>
+  figure {
+    border: 1px solid #22afff;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  figure figcaption {
+    margin-top: 10px;
+    font-size: 90%;
+    color: #555;
+  }
+</style>

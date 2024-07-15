@@ -1,0 +1,42 @@
+---
+import { spectrum } from "@contenido";
+import Section from "@/components/Section.astro";
+
+const { equation, number01, number02, number03 } = spectrum;
+---
+
+<Section title="El espectro electromagnético">
+  <p>
+    El espectro electromagnético abarca desde frecuencias subsónicas de unos
+    pocos hertz hasta los rayos cósmicos en {number01} Hz. Dentro de este espectro,
+    las frecuencias luminosas se dividen en tres bandas:
+    <ul>
+      <li>
+        <b>Infrarrojo:</b> Longitudes de onda demasiado grandes para ser vistas por
+        el ojo humano.
+      </li>
+      <li>
+        <b>Visible:</b> Longitudes de onda que el ojo humano puede percibir.
+      </li>
+      <li>
+        <b>Ultravioleta:</b> Longitudes de onda demasiado cortas para ser vistas
+        por el ojo humano
+      </li>
+    </ul>
+  </p>
+  <p>
+    Para ondas electromagnéticas de mayor frecuencia, como las luminosas, se usa
+    la longitud de onda en lugar de la frecuencia. La longitud de onda es la
+    distancia que ocupa un ciclo de una onda electromagnética y depende de la
+    frecuencia y la velocidad de la luz. La relación matemática es
+    {equation}
+    donde <br />
+    \(\lambda\) es la longitud de onda (metros por ciclo). <br />
+    \(c\) es la velocidad de la luz (300,000,000 metros por segundo). <br />
+    \(f\) es la frecuencia (hertz). <br /><br />
+    Las longitudes de onda para las frecuencias luminosas suelen expresarse en micrones
+    (micrómetros) o nanómetros (1 nanómetro = {number02} metros, o 0.001 micrón).
+    Para el espectro visible, a menudo se usa la unidad angstrom (Å), donde 1 Å =
+    {number03} metros, o 0.0001 micrón.
+  </p>
+</Section>

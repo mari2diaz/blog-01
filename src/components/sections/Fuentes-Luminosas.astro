@@ -1,0 +1,56 @@
+---
+import { luminous } from "@contenido";
+import Section from "@/components/Section.astro";
+
+const { equation01, equation02, equation03, equation04 } = luminous;
+---
+
+<Section title="Fuentes luminosas">
+  <p>
+    El intervalo de frecuencias luminosas que detecta el ojo humano ocupa un
+    segmento muy angosto del espectro total de frecuencias electromagnéticas.
+    Por ejemplo, la luz azul ocupa las longitudes de onda más cortas de la luz
+    visible, y los tonos rojos ocupan las longitudes de onda más largas. Las
+    fuentes luminosas que se usan en los sistemas de fibra óptica deben tener
+    longitudes de onda que se propaguen con eficiencia en la fibra óptica.
+    Además se debe considerar el intervalo de longitudes de onda, porque
+    mientras más amplio sea el intervalo, será más probable que se presente la
+    dispersión cromática. También, las fuentes luminosas deben producir la
+    potencia suficiente para permitir que la luz se propague por la fibra sin
+    causar distorsiones no lineales en ella ni en el receptor. Por último, la
+    fuente luminosa se debe fabricar de tal manera que su salida se pueda
+    acoplar con la fibra en forma eficiente.
+  </p>
+  <h3>Potencia óptica</h3>
+  <p>
+    La intensidad luminosa es un concepto bastante complejo, que se puede
+    expresar en términos tanto fotométricos como radiométricos. La fotometría es
+    la ciencia de medir sólo las ondas luminosas visibles al ojo humano. Por
+    otro lado, la radiometría mide la luz en todo el espectro electromagnético.
+    En términos fotométricos, la intensidad luminosa se describe con más
+    frecuencia en términos de densidad de flujo luminoso, y se mide en lúmenes
+    por unidad de área. Sin embargo, con frecuencia son más útiles los términos
+    radiométricos para el ingeniero y el técnico. En términos radiométricos, la
+    potencia óptica mide la tasa con la que las ondas electromagnéticas
+    transfieren energía luminosa. En términos sencillos, la potencia óptica se
+    describe como el flujo de energía luminosa que atraviesa determinado punto
+    en un tiempo especificado. La potencia óptica se define con la siguiente
+    ecuación
+    {equation01}
+    o sea
+    {equation02}
+    en donde <br />
+    P = potencia óptica (watts) <br />
+    dQ = carga instantánea (joules) <br />
+    dt = cambio instantáneo de tiempo (segundos) <br /><br />
+    A veces, a la potencia óptica se le llama flujo radiante (φ), que equivale a
+    joules por segundo, y es la misma potencia que se mide eléctrica o térmicamente
+    en watts. Los términos radiométricos se usan en general con fuentes luminosas
+    cuyas potencias van de decenas de microwatts hasta más de 100 miliwatts. La potencia
+    óptica se suele expresar en decibelios relativos a un valor definido de potencia,
+    como 1 mW (dBm) o 1 μW (dBμ). Las ecuaciones correspondientes son
+    {equation03}
+    y
+    {equation04}
+  </p>
+</Section>

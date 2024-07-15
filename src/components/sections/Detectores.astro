@@ -1,0 +1,149 @@
+---
+import { detectors } from "@contenido";
+import Section from "@/components/Section.astro";
+
+const { equation01, equation02, equation03, equation04, equation05, number } =
+  detectors;
+---
+
+<Section title="Detectores de luz">
+  <p>
+    Hay dos dispositivos que se suelen usar para detectar la energía luminosa en
+    los receptores de comunicación con fibra óptica: los <b>diodos PIN</b> (tipo
+    p-tipo n intrínseco) y los <b>APD</b> (fotodiodos de avalancha).
+  </p>
+  <h3>Diodos PIN</h3>
+  <p>
+    Un diodo PIN es un fotodiodo de capa de agotamiento, y es probable que sea
+    el dispositivo más usado como detector de luz en los sistemas de
+    comunicaciones con fibra óptica. La fig. 2-15 muestra el esquema básico de
+    un diodo PIN. Una capa dopada muy ligeramente (casi pura o intrínseca) de
+    material semiconductor tipo n se encierra entre la unión de las dos áreas de
+    contacto tipo p y tipo n, muy dopadas. La luz entra al dispositivo a través
+    de una ventana muy pequeña y cae sobre el material intrínseco carente de
+    portadores. El material intrínseco se hace lo suficientemente grueso como
+    para que la mayoría de los fotones que entren al dispositivo queden
+    absorbidos por esta capa. En esencia, el fotodiodo PIN funciona exactamente
+    al contrario que un LED. La mayoría de los fotones quedan absorbidos por
+    electrones de la banda de valencia del material intrínseco. Cuando se
+    absorben los fotones agregan la energía suficiente para generar portadores
+    en la región de agotamiento, y permiten el paso de la corriente por el
+    dispositivo.
+  </p>
+  <figure>
+    <img src="/public/figura15.png" alt="construccion de un fotodiodo pin" />
+    <figcaption>FIGURA 2-15 Construcción de un fotodiodo PIN</figcaption>
+  </figure>
+  <h4>Efecto fotoeléctrico</h4>
+  <p>
+    La luz que entra por la ventana de un diodo PIN se absorbe en el material
+    intrínseco y agrega la energía suficiente para hacer que los electrones
+    pasen de la banda de valencia a la banda de conducción. El aumento en la
+    cantidad de electrones que pasan a la banda de conducción produce un aumento
+    en la cantidad de huecos en la banda de valencia. Para hacer que la
+    corriente pase por un fotodiodo, se debe absorber luz de la energía
+    suficiente para comunicar a los electrones de valencia la energía suficiente
+    para que salten la banda prohibida. La banda prohibida, para el silicio, es
+    1.12 eV (electrón volts). La descripción matemática es la siguiente. <br
+    /><br />
+    La equivalencia de unidades de energía es
+    {equation01}
+    Así, la banda prohibida para el silicio, es
+    {equation02}
+    y energía \((E) = hf\) <br />
+    en donde <br />
+    \(h\) = constante de Planck = {number}
+    <br />
+    \(f\) = frecuencia (hertz) <br />
+    De esta ecuación se despeja \(f\)
+    {equation03}
+    Para un fotodiodo de silicio,
+    {equation04}
+    Al pasar a longitud de onda se obtiene
+    {equation05}
+  </p>
+  <h3>Fotodiodos de avalancha</h3>
+  <p>
+    La fig. 2-16 muestra la construcción básica de un fotodiodo de avalancha
+    (APD, de avalanche photodiode). Un APD es una estructura pipn. La luz entra
+    al diodo y se absorbe en la capa n, delgada y muy dopada. Entre la unión
+    i-p-n se desarrolla una gran intensidad de campo eléctrico, por polarización
+    inversa, que causa ionización por impacto. Durante la ionización por
+    impacto, un portador puede adquirir la energía suficiente para ionizar otros
+    electrones enlazados. Estos portadores ionizados, a su vez, provocan más
+    ionizaciones. El proceso continúa como en una avalancha y es, de hecho,
+    equivalente a una ganancia o multiplicación interna de portadores. En
+    consecuencia, los APD son más sensibles que los diodos PIN y requieren menos
+    amplificación adicional. Las desventajas de los APD son los tiempos de
+    tránsito relativamente grandes, y ruido adicional, generado internamente,
+    debido al factor de multiplicación por avalancha.
+  </p>
+  <figure>
+    <img
+      src="/public/figura16.png"
+      alt="construccion de un fotodiodo de avalancha"
+    />
+    <figcaption>
+      FIGURA 2-16 Construcción de un fotodiodo de avalancha
+    </figcaption>
+  </figure>
+  <h3>Características de los detectores de luz</h3>
+  <p>
+    Las características más importantes de los detectores de luz son: <br />
+  </p>
+  <ul>
+    <li>
+      <b>Responsividad</b>. La responsividad es una medida de la eficiencia de
+      conversión de un fotodetector. Es la relación de la corriente de salida de
+      un fotodiodo entre la potencia óptica que le entra, y tiene unidades de
+      amperes/watt. En general, se menciona la responsividad a una determinada
+      longitud de onda o frecuencia.
+    </li>
+    <li>
+      <b>Corriente oscura</b>. La corriente oscura es la corriente de reposo que
+      pasa por un fotodiodo cuando no hay entrada luminosa. Se debe a portadores
+      generados térmicamente en el diodo.
+    </li>
+    <li>
+      <b>Tiempo de tránsito</b>. Es el tiempo que tarda un portador inducido por
+      la luz en cruzar la región de agotamiento. Este parámetro determina la
+      máxima frecuencia posible de bits con determinado fotodiodo.
+    </li>
+    <li>
+      <b>Respuesta espectral</b>. Es el intervalo de longitudes de onda que se
+      puede usar con determinado fotodiodo. En general, la respuesta espectral
+      relativa se grafica en función de la longitud de onda o de la frecuencia.
+    </li>
+    <li>
+      <b>Sensibilidad a la luz</b>. En esencia, esta sensibilidad es la potencia
+      óptica mínima que puede recibir un detector para producir una señal
+      eléctrica útil de salida. La sensibilidad a la luz se acostumbra mencionar
+      para determinada longitud de onda, ya sea en dBm o en dB.
+    </li>
+  </ul>
+</Section>
+
+<style>
+  figure {
+    border: 1px solid #22afff;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  figure figcaption {
+    margin-top: 10px;
+    font-size: 90%;
+    color: #555;
+  }
+</style>

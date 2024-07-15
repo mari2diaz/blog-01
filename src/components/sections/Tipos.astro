@@ -1,0 +1,94 @@
+---
+import Section from "@/components/Section.astro";
+---
+
+<Section title="Tipos de fibra">
+  <p>
+    Existen tres tipos principales de fibra óptica: núcleo y forro de plástico,
+    núcleo de vidrio con forro de plástico (PCS), y núcleo y forro de vidrio
+    (SCS). Además, se investiga una cuarta variedad con cloruro de zinc,
+    potencialmente más eficiente que el vidrio. Las fibras de plástico son
+    flexibles, fáciles de instalar, menos costosas y ligeras, pero tienen alta
+    atenuación, limitándolas a tramos cortos. Las fibras de vidrio tienen menor
+    atenuación; las PCS son mejores contra la radiación y adecuadas para
+    aplicaciones militares, mientras que las SCS ofrecen mejores características
+    de propagación y facilidad de terminación, aunque son menos robustas y más
+    susceptibles a la radiación. <br />
+    <br />
+    En la construcción de cables de fibra óptica, existen diferentes diseños. En
+    la construcción suelta de tubo, cada fibra está encapsulada en poliuretano dentro
+    de un tubo protector, evitando la penetración de agua y la corrosión bajo tensiones.
+    La construcción restringida incluye amortiguadores primarios y secundarios para
+    proteger la fibra de influencias mecánicas, con un tubo protector externo lleno
+    de poliuretano para evitar la humedad. La configuración de hilos múltiples incorpora
+    un miembro central de acero para mayor resistencia, y la configuración de cinta
+    es común en sistemas telefónicos de fibra óptica.
+    <br />
+    <br />
+    Una desventaja de los cables de fibra óptica es su baja resistencia a la tensión,
+    por lo que se refuerzan con materiales como acero, fibra de vidrio, plástico,
+    FR-PVC, fibra de Kevlar y papel, dependiendo de los requisitos del sistema y
+    las restricciones económicas y ambientales.
+  </p>
+  <h3>Construcción del cable</h3>
+  <p>
+    Existen diversos diseños de cables de fibra óptica, cada uno adaptado a
+    diferentes necesidades. Estos cables pueden estar compuestos por un núcleo,
+    un revestimiento, un tubo protector, amortiguadores, miembros resistentes y
+    una o más chaquetas de protección. <br /><br />
+    En la <b>construcción suelta de tubo</b>, cada fibra se coloca dentro de un
+    tubo protector lleno de poliuretano, que sella la fibra y evita la
+    penetración de agua. Esta configuración ayuda a prevenir la corrosión bajo
+    tensiones y la fatiga estática que puede ocurrir si la fibra de vidrio está
+    expuesta a alta humedad durante largos periodos. Para proteger la fibra de
+    cambios extremos de temperatura, se aplican capas de laca, silicona o
+    acrilato alrededor del revestimiento. <br /><br />
+    La <b>construcción de cable restringido</b> incluye un amortiguador primario
+    y secundario que rodea la fibra óptica, proporcionando protección contra influencias
+    mecánicas externas. El Kevlar se utiliza para aumentar la resistencia del cable
+    a la tensión. Además, un tubo protector externo lleno de poliuretano evita que
+    la humedad entre en contacto con la fibra. <br /><br />
+    La <b>configuración de hilos múltiples</b> añade un miembro central de acero
+    y una envoltura de cinta de Mylar para aumentar la resistencia a la tensión.
+    La configuración de cinta es común en sistemas telefónicos de fibra óptica, y
+    la última configuración representada muestra un cable de sílice revestido con
+    plástico.
+  </p>
+  <figure>
+    <img
+      src="/public/figura2.png"
+      alt="construcion del cable de fibra optica"
+      width="700"
+    />
+    <figcaption>
+      FIGURA 2-2 Configuraciones de cable de fibra óptica: (a) construcción
+      suelta en tubo; (b) fibra restringida; (c) fibras múltiples; (d) cable
+      telefónico; (e) cable de sílice revestida de plástico
+    </figcaption>
+  </figure>
+</Section>
+
+<style>
+  figure {
+    border: 1px solid #22afff;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  figure figcaption {
+    margin-top: 10px;
+    font-size: 90%;
+    color: #555;
+  }
+</style>

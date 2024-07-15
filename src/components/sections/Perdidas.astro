@@ -1,0 +1,244 @@
+---
+import { losses } from "@contenido";
+import Section from "@/components/Section.astro";
+
+const { equation01, equation02, equation03, number01, number02 } = losses;
+---
+
+<Section title="Pérdidas en los cables de fibra óptica">
+  <p>
+    Es probable que la pérdida de potencia en un cable de fibra óptica sea la
+    característica más importante del cable. Con frecuencia se llama atenuación
+    a la pérdida de potencia, y produce una pérdida de potencia de la onda
+    luminosa al atravesar el cable. La atenuación tiene varios efectos adversos
+    sobre el funcionamiento, que incluyen la reducción del ancho de banda del
+    sistema, la rapidez de transmisión de información, la eficiencia y la
+    capacidad general del sistema. La fórmula normal con la que se expresa la
+    pérdida total de potencia en un cable de fibra es
+    {equation01}
+    en la que <br />
+    A(dB) = reducción total de potencia (atenuación) <br />
+    {number01} = potencia de salida del cable (watts) <br />
+    {number02} = potencia de entrada al (watts) <br /><br />
+    En general, las fibras multimodales tienden a tener mayores pérdidas de atenuación
+    que los cables unimodales, debido principalmente a la mayor dispersión de la
+    onda luminosa, producida por las impurezas. La tabla 2-9 muestra la potencia
+    de salida como porcentaje de la potencia de entrada para un cable de fibra óptica
+    a distintos valores de pérdida en decibelios. Un cable con pérdida de 3 dB reduce
+    la potencia de salida a 50% de la potencia de entrada. <br />
+    <br />
+    Aunque la pérdida total de potencia es de principal importancia, la atenuación
+    de un cable óptico se expresa, en general, en decibelios de pérdida por unidad
+    de longitud. La atenuación se representa con un valor positivo de dB, porque
+    por definición es una pérdida. La tabla 2-10 es una lista de atenuaciones, en
+    dB/km, para diversos tipos de cables de fibra.
+  </p>
+  <figure>
+    <img
+      src="/public/figura9.png"
+      alt="porcentaje de potencia de salida en funcion de la perdida en dB"
+    />
+    <figcaption>
+      FIGURA 2-9 % de potencia de salida en función de la pérdida en dB
+    </figcaption>
+  </figure>
+  <figure>
+    <img
+      src="/public/figura10.png"
+      alt="atenuacion en el cable de fibra optica"
+    />
+    <figcaption>FIGURA 2-10 Atenuación en el cable de fibra óptica</figcaption>
+  </figure>
+  <p>
+    La potencia óptica, en watts, medida a determinada distancia a una fuente de
+    potencia, se puede calcular con la siguiente ecuación
+    {equation02}
+    en la que <br />
+    P = valor medido de la potencia (watts) <br />
+    \(P_t\) = valor de la potencia de transmisión (watts) <br />
+    A = pérdidas de potencia en el cable (dB/km) <br />
+    l = longitud del cable (km) <br /><br />
+    De igual manera, la potencia óptica, en decibelios, es
+    {equation03}
+    en la que <br />
+    P = valor medido de la potencia (dBm) <br />
+    {number02} = potencia de transmisión (dBm) <br />
+    A = pérdidas de potencia en el cable (dB/km) <br /><br />
+    Las pérdidas de transmisión en los cables de fibra óptica son una de las características
+    más importantes de la fibra. Las pérdidas en la fibra causan una reducción de
+    la potencia luminosa y, en consecuencia, reducen el ancho de banda del sistema,
+    la rapidez de transmisión de información, la eficiencia y la capacidad general
+    del sistema. Las principales pérdidas en la fibra son:
+  </p>
+  <ul>
+    <li>Pérdidas por absorción.</li>
+    <li>Pérdidas por dispersión en material o de Rayleigh.</li>
+    <li>Dispersión cromática, o de longitudes de onda.</li>
+    <li>Pérdidas por radiación.</li>
+    <li>Dispersión modal.</li>
+    <li>Pérdidas por acoplamiento.</li>
+  </ul>
+  <h3>Pérdidas por absorción</h3>
+  <p>
+    La pérdida por absorción en las fibras ópticas es análoga a la disipación de
+    potencia en los cables de cobre; las impurezas en la fibra absorben la luz y
+    la convierten en calor. El vidrio ultrapuro que se usa para fabricar las
+    fibras ópticas tiene, aproximadamente, 99.9999% de pureza. Sin embargo, son
+    normales las pérdidas por absorción de 1 a 1000 dB/km. En esencia, hay tres
+    factores que contribuyen a las pérdidas por absorción en las fibras ópticas:
+    absorción de ultravioleta, absorción de infrarrojo y absorción de resonancia
+    iónica.
+  </p>
+  <h4>Absorción ultravioleta</h4>
+  <p>
+    La absorción ultravioleta se produce por los electrones de valencia en el
+    material silíceo con el que se fabrican las fibras. La luz ioniza los
+    electrones de valencia y los pasa a la capa de conducción. La ionización
+    equivale a una pérdida en el campo luminoso total y en consecuencia
+    contribuye a las pérdidas de transmisión en la fibra.
+  </p>
+  <h4>Absorción infrarroja</h4>
+  <p>
+    Es un resultado de los fotones de luz que son absorbidos por los átomos de
+    las moléculas del núcleo de vidrio. Los fotones absorbidos se convierten en
+    vibraciones mecánicas aleatorias, características del calentamiento.
+  </p>
+  <h4>Absorción por resonancia de iones</h4>
+  <p>
+    Esta absorción se debe a los iones OH– en el material. La fuente de los
+    iones OH– son moléculas de agua atrapadas en el vidrio durante el proceso de
+    fabricación. La absorción de iones también se debe a la presencia de
+    moléculas de hierro, cobre y cromo.
+  </p>
+  <h3>Pérdidas en material, o por dispersión de Rayleigh</h3>
+  <p>
+    Durante el proceso de manufactura, el hilo se trefila formando fibras largas
+    de un diámetro muy pequeño. Durante ese proceso, el vidrio se encuentra en
+    un estado plástico: ni sólido ni líquido. La tensión aplicada al vidrio
+    durante ese proceso hace que en el enfriamiento se desarrollen
+    irregularidades submicroscópicas, que se incorporan a la fibra en forma
+    permanente. Cuando los rayos de luz que se están propagando por una fibra
+    chocan con una de esas impurezas, se difractan. La difracción hace que la
+    luz se disperse o se abra en muchas direcciones. Algo de la luz difractada
+    continúa recorriendo la fibra, y algo escapa a través del revestimiento. Los
+    rayos luminosos que salen representan una pérdida de potencia. A todo esto
+    se le llama pérdida por dispersión de Rayleigh.
+  </p>
+  <h3>Dispersión cromática o de longitudes de onda</h3>
+  <p>
+    Como se dijo antes, el índice de refracción de un material depende de la
+    longitud de onda. Los diodos emisores de luz (LED) emite luz que contiene
+    una combinación de longitudes de onda. Cada una de ellas, en la señal de luz
+    compuesta, viaja a distinta velocidad. En consecuencia, los rayos de luz que
+    emite al mismo tiempo un LED y se propagan por una fibra óptica no llegan al
+    extremo opuesto al mismo tiempo. Esto da como resultado una señal recibida
+    distorsionada; la distorsión se llama distorsión cromática. Se puede
+    eliminar usando una fuente monocromática, como por ejemplo un diodo láser de
+    inyección (ILD). La dispersión cromática o de longitudes de onda sólo se
+    presenta en fibras con transmisión unimodal.
+  </p>
+  <h3>Pérdidas por radiación</h3>
+  <p>
+    Las pérdidas por radiación se deben principalmente a pequeños cambios de
+    dirección y dobleces de la fibra. En esencia hay dos tipos de dobleces: los
+    microdobleces y los dobleces con radio constante. El microdoblamiento se
+    debe a diferencias en las velocidades de contracción térmica del núcleo y
+    del material de revestimiento. Un microdoblez es un doblez o imperfección
+    geométrica en miniatura del eje de la fibra, que representa una
+    discontinuidad en ella en donde puede presentarse la dispersión de Rayleigh.
+    Las pérdidas en microdobleces en general constituyen menos de 20% de la
+    atenuación en una fibra. Los dobleces de radio constante se deben a
+    demasiada presión y tensión y, en general, se presentan cuando se doblan las
+    fibras durante su manejo o instalación.
+  </p>
+  <h3>Dispersión modal</h3>
+  <p>
+    La dispersión modal, o ensanchamiento del pulso se debe a la diferencia en
+    los tiempos de propagación de rayos de luz que van por diferentes
+    trayectorias en una fibra. Es obvio que la dispersión modal sólo puede
+    presentarse en las fibras multimodales. Se puede reducir en forma
+    considerable usando fibras de índice graduado, y se puede eliminar casi con
+    el uso de fibras unimodales de índice escalonado. <br /><br />
+    La dispersión modal puede causar que un pulso de energía luminosa se reparta
+    al propagarse por una fibra. Si el ensanchamiento del pulso tiene la gravedad
+    suficiente, el pulso puede quedar encimado al siguiente (un ejemplo de interferencia
+    entre símbolos). En una fibra multimodal de índice escalonado, un rayo de luz
+    que se propaga en forma directa por el eje de la fibra tarda el menor tiempo
+    en recorrer la fibra. Un rayo de luz que llega a la interfaz núcleo- revestimiento,
+    en el ángulo crítico, sufrirá la cantidad máxima de reflexiones internas y, por
+    consiguiente, tardará el mayor tiempo en recorrer la fibra.
+  </p>
+  <h3>Pérdidas en acoplamiento</h3>
+  <p>
+    En los cables de fibra pueden presentarse pérdidas por acoplamiento en
+    cualquiera de los tres tipos siguientes de uniones ópticas: conexiones de
+    fuente luminosa a fibra, conexiones de fibra a fibra y conexiones de fibra a
+    fotodetector. Las pérdidas en las uniones se deben, con más fre- cuencia, a
+    uno de los siguientes problemas de alineación: desalineamiento lateral,
+    desalinea- miento de entrehierro, desalineamiento angular y acabados
+    superficiales imperfectos.
+  </p>
+  <h4>Desalineamiento lateral.</h4>
+  <p>
+    Éste se ve en la fig. 2-11a, y es el desplazamiento lateral o axial entre
+    dos tramos de cables de fibra adjuntos. La cantidad de pérdida puede ser
+    desde un par hasta varias décimas de decibelio, o hasta varios decibelios.
+    Esta pérdida suele ser despreciable si los ejes de las fibras se alinean a
+    menos de 5% del diámetro de la fibra menor.
+  </p>
+  <h4>Desalineamiento de entrehierro.</h4>
+  <p>
+    Se ve en la fig. 2-11b, y a veces se llama separación entre extremos. Cuando
+    se hacen empalmes en fibras ópticas, las fibras se deben tocar realmente.
+    Mientras más alejadas queden, la pérdida de luz será mayor. Si dos fibras se
+    unen con un conector, los extremos no se deben tocar, porque al frotarse
+    entre sí en el conector se podrían dañar una o las dos fibras.
+  </p>
+  <h4>Desalineamiento angular</h4>
+  <p>
+    Éste se ve en la fig. 2-11c, y a veces se llama desplazamiento angular. Si
+    el desplazamiento angular es menor que 2°, la pérdida será menor que 0.5 dB.
+  </p>
+  <h4>Acabado superficial imperfecto</h4>
+  <p>
+    Se ve en la fig. 2-11d. Los extremos de las dos fibras adjuntas deben estar
+    muy pulidos y asentar entre sí. Si los extremos de las fibras están menos de
+    3° fuera de la perpendicular, las pérdidas serán menores que 0.5 dB.
+  </p>
+  <figure>
+    <img
+      src="/public/figura11.png"
+      alt="defectos en el alineamiento de las fibras"
+    />
+    <figcaption>
+      FIGURA 2-11 Defectos en el alineamiento de las fibras: (a) desalineamiento
+      lateral; (b) desalineamiento de entrehierro; (c) desalineamiento angular;
+      (d) acabado superficial
+    </figcaption>
+  </figure>
+</Section>
+
+<style>
+  figure {
+    border: 1px solid #22afff;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  figure figcaption {
+    margin-top: 10px;
+    font-size: 90%;
+    color: #555;
+  }
+</style>

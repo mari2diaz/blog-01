@@ -1,0 +1,54 @@
+---
+import { angle } from "@contenido";
+import Section from "@/components/Section.astro";
+
+const { equation01, equation02, equation03, equation04, number } = angle;
+---
+
+<Section title="Ángulo de aceptación y cono de aceptación">
+  <p>
+    El ángulo de aceptación y el cono de aceptación son conceptos fundamentales
+    en la capacidad de una fibra óptica para acoplar luz de una fuente externa.
+    Estos ángulos determinan la capacidad de recogida de luz de la fibra. Cuando
+    los rayos de luz entran en la fibra óptica desde el aire, se refractan al
+    pasar de un medio menos denso (aire) a uno más denso (vidrio). Según la ley
+    de Snell, la luz se refracta acercándose a la normal al pasar por la
+    interfaz aire-vidrio. Para que la luz se propague a través del núcleo de la
+    fibra, debe llegar a la interfaz núcleo-revestimiento formando un ángulo
+    mayor que el ángulo crítico (\(\theta_c\)).El ángulo de aceptación es el
+    ángulo máximo que pueden formar los rayos de luz al llegar a la interfaz
+    aire-fibra para poder propagarse por la fibra. Al girar este ángulo
+    alrededor del eje de la fibra, se forma el cono de aceptación.
+    {equation01}
+    A {number} se le llama ángulo de aceptación, o medio ángulo del cono de aceptación.
+    Define al ángulo máximo que pueden formar los rayos luminosos externos al llegar
+    a la interfaz aire-fibra para poder propagarse por la fibra, con una respuesta
+    no mayor de 10 dB menos que el valor máximo.
+  </p>
+  <h3>Abertura numérica</h3>
+  <p>
+    La abertura numérica (NA, de numerical aperture) se relaciona en forma
+    estrecha con el ángulo de aceptación y es la figura de mérito que se suele
+    usar para medir la magnitud del ángulo de aceptación. En esencia, se usa la
+    abertura numérica para describir la capacidad de reunir la luz que tiene una
+    fibra óptica. Mientras mayor sea la magnitud de la abertura numérica, la
+    fibra acepta mayor cantidad de luz externa. Para fibras unimodales o
+    multimodales, la abertura numérica se define como el seno del ángulo máximo
+    que un rayo de luz que entra a la fibra puede formar con el eje de la fibra,
+    y propagarse por el cable por reflexión interna, es decir, el seno del medio
+    ángulo de aceptación. Los rayos de luz que entran al cable desde el exterior
+    del cono de aceptación entrarán al revestimiento y, en consecuencia, no se
+    propagarán por el cable. Así, para la luz que entra a la fibra desde el
+    espacio libre, la abertura numérica es
+    {equation02}
+    y
+    {equation03}
+    También,
+    {equation04}
+    en donde <br />
+    NA = abertura numérica (adimensional) <br />
+    \(n_1\) = índice de refracción del núcleo (adimencional) <br />
+    \(n_2\) = índice de refracción del revestimiento (adimencional) <br />
+    {number} = ángulo de aceptación (grados)
+  </p>
+</Section>

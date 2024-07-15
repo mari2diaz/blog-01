@@ -1,0 +1,183 @@
+---
+import { settings } from "@contenido";
+import Section from "@/components/Section.astro";
+
+const { equation01, equation02 } = settings;
+---
+
+<Section title="Configuraciones de fibra óptica">
+  <p>
+    En esencia hay tres clases de configuración de fibra óptica: <b
+      >índice escalonado unimodal</b
+    >, <b>índice escalonado multimodal</b> e <b>índice graduado multimodal</b>.
+  </p>
+  <h3>Fibra unimodal de índice escalonado</h3>
+  <p>
+    La fibra unimodal de índice escalonado tiene un núcleo central muy pequeño
+    que permite una única trayectoria de luz. Esta fibra puede tener un
+    revestimiento de aire o un revestimiento de otro material. Con revestimiento
+    de aire, el índice de refracción del núcleo de vidrio (\( n_1 \)) es
+    aproximadamente 1.5, y el del revestimiento de aire \( n_0 \) es 1, lo que
+    crea un ángulo crítico pequeño (unos 42°) en la interfaz vidrio-aire,
+    facilitando el acoplamiento de luz. Sin embargo, estas fibras son frágiles.
+    Con un revestimiento diferente al aire, el índice de refracción del
+    revestimiento (\( n_2 \)) es un poco menor que el del núcleo central (\( n_1
+    \)), resultando en un ángulo crítico mayor, unos 77°. Esto produce un ángulo
+    de aceptación pequeño, dificultando el acoplamiento de luz de la fuente a la
+    fibra. La luz se propaga por la fibra por reflexión. Los rayos luminosos que
+    entran a la fibra siguen más o menos la misma trayectoria por el núcleo y
+    tardan aproximadamente el mismo tiempo en recorrer la longitud de la fibra. <br
+    /><br />
+    Una fibra óptica unimodal transmitirá un solo modo para todas las longitudes
+    de onda que sean mayores que su longitud de onda de corte. Esta longitud de onda
+    de corte se calcula como sigue
+    {equation01}
+    donde <br />
+    \(\lambda_c\) = longitud de onda de corte (\(\mu m\)) <br />
+    \(n_1\) = índice de refracción del núcleo (adimensional) <br />
+    \(n_2\) = índice de refracción del revestimiento (adimensional) <br />
+    \(a\) = radio del núcleo (\(\mu m\))
+    {equation02}
+  </p>
+  <h3>Fibra multimodal de índice escalonado</h3>
+  <p>
+    En la fig. 2-7 se ve una fibra multimodal de índice escalonado. Se parece a
+    la configuración unimodal, pero el núcleo central es mucho mayor. Esta clase
+    de fibra tiene una abertura grande de luz a fibra y en consecuencia permite
+    la entrada de más luz al cable. Los rayos luminosos que llegan a la interfaz
+    entre núcleo y revestimiento formando un ángulo mayor que el crítico (rayo
+    A) se propagan por el núcleo en zigzag, reflejándose continuamente en la
+    interfaz. Los rayos luminosos que llegan a la interfaz entre el núcleo y el
+    revestimiento formando un ángulo menor que el crítico (rayo B) y que entran
+    al revestimiento se pierden. Se puede ver que hay muchas trayectorias que
+    puede seguir un rayo de luz al propagarse por la fibra. El resultado es que
+    no todos los rayos de luz siguen la misma trayectoria y, en consecuencia, no
+    tardan lo mismo para recorrer la longitud de la fibra.
+  </p>
+  <figure>
+    <img
+      src="/public/figura7.png"
+      alt="fibra multimodal de indice escalonado"
+    />
+    <figcaption>FIGURA 2-7 Fibra multimodal de índice escalonado</figcaption>
+  </figure>
+  <h3>Fibra multimodal de índice graduado</h3>
+  <p>
+    En la fig. 2-8 se ve una fibra multimodal de índice graduado. Estas fibras
+    se caracterizan por un núcleo central cuyo índice de refracción es no
+    uniforme; es máximo en el centro y disminuye en forma gradual hacia la
+    orilla externa. La luz se propaga por esta clase de fibras por refracción.
+    Al propagarse un rayo de luz en dirección diagonal por el núcleo hacia el
+    centro, pasa continuamente de una fase menos densa a una más densa. En
+    consecuencia, los rayos luminosos se refractan en forma constante, y eso
+    produce su deflexión continua. La luz entra a la fibra formando muchos
+    ángulos diferentes. Al propagarse por la fibra, los rayos que viajan en la
+    zona
+  </p>
+  <figure>
+    <img src="/public/figura8.png" alt="fiblra multimodal de indice graduado" />
+    <figcaption>FIGURA 2-8 Fibra multimodal de índice graduado</figcaption>
+  </figure>
+  <h3>Comparación de los tres tipos de fibra óptica</h3>
+  <h4>Fibra unimodal de índice escalonado</h4>
+  <h5>Ventajas</h5>
+  <ul>
+    <li>
+      Hay dispersión mínima. Como todos los rayos que se propagan por la fibra
+      toman aproximadamente la misma trayectoria, tardan aproximadamente el
+      mismo tiempo para recorrer el cable. En consecuencia, un pulso de luz que
+      entra al cable se puede reproducir con mucha exactitud en el extremo de
+      recepción.
+    </li>
+    <li>
+      Debido a la gran exactitud de reproducción de los pulsos transmitidos en
+      el extremo de recepción, son posibles mayores anchos de banda y mayores
+      capacidades de transmisión de información con las fibras unimodales de
+      índice escalonado que con los otros tipos de fibra.
+    </li>
+  </ul>
+  <h5>Desventajas</h5>
+  <ul>
+    <li>
+      Debido a que el núcleo central es muy pequeño, es difícil acoplar la luz
+      hacia adentro y hacia afuera de esta clase de fibra. La abertura de la
+      fuente a la fibra es la más pequeña de todos los tipos de fibra.
+    </li>
+    <li>
+      También debido al pequeño núcleo central, se requiere una fuente luminosa
+      muy direccional, como por ejemplo un láser, para acoplar la luz en una
+      fibra unimodal de índice escalonado.
+    </li>
+    <li>
+      Las fibras unimodales de índice escalonado son costosas y difíciles de
+      fabricar.
+    </li>
+  </ul>
+  <h4>Fibra multimodal de índice escalonado</h4>
+  <h5>Ventajas</h5>
+  <ul>
+    <li>
+      Las fibras multimodales de índice escalonado son poco costosas, y su
+      fabricación es sencilla.
+    </li>
+    <li>
+      Es fácil acoplar la luz hacia adentro y hacia afuera de las fibras
+      multimodales de índice escalonado; tienen una abertura grande de la fuente
+      a la fibra.
+    </li>
+  </ul>
+  <h5>Desventajas</h5>
+  <ul>
+    <li>
+      Los rayos luminosos siguen muchas trayectorias distintas por la fibra, lo
+      que da como resultado grandes diferencias en sus tiempos de propagación.
+      Por eso, los rayos que recorren esta clase de fibras tienden a extenderse
+      y, en consecuencia, un pulso de luz que se propague por una fibra
+      multimodal de índice escalonado se distorsiona más que en otros tipos de
+      fibra.
+    </li>
+    <li>
+      El ancho de banda y la capacidad de transferencia de información posibles
+      con este tipo de cables es menor que con los demás tipos.
+    </li>
+  </ul>
+  <h4>Fibra multimodal de índice graduado</h4>
+  <p>
+    En esencia, este tipo de fibra no tiene ventajas ni desventajas
+    sobresalientes. Las fibras multimodales de índice escalonado son más fáciles
+    de acoplar la luz que les entra y que les sale, en comparación con las
+    fibras unimodales de índice escalonado, pero más difíciles de acoplar en
+    comparación con las multimodales de índice escalonado. La distorsión debida
+    a trayectorias múltiples de propagación es mayor que en las fibras
+    unimodales de índice escalonado, pero menor que en las multimodales de
+    índice escalonado. Son más fáciles de fabricar las fibras de índice graduado
+    que las unimodales de índice escalonado, pero más difíciles que las
+    multimodales de índice escalonado. La fibra multimodal de índice graduado se
+    considera intermedia en comparación con los otros tipos.
+  </p>
+</Section>
+
+<style>
+  figure {
+    border: 1px solid #22afff;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  figure figcaption {
+    margin-top: 10px;
+    font-size: 90%;
+    color: #555;
+  }
+</style>

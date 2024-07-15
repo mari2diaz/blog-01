@@ -1,0 +1,53 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+import Angulo from "@/components/sections/Angulo-Cono.astro";
+import Comparacion from "@/components/sections/Comparacion.astro";
+import Configuraciones from "@/components/sections/Configuraciones.astro";
+import Detectores from "@/components/sections/Detectores.astro";
+import Diagrama from "@/components/sections/Diagrama.astro";
+import Encabezado from "@/components/sections/Encabezado.astro";
+import Espectro from "@/components/sections/Espectro.astro";
+import Historia from "@/components/sections/Historia.astro";
+import Introduccion from "@/components/sections/Introduccion.astro";
+import Laseres from "@/components/sections/Laseres.astro";
+import Luminosas from "@/components/sections/Fuentes-Luminosas.astro";
+import Opticas from "@/components/sections/Fuentes-Opticas.astro";
+import Perdidas from "@/components/sections/Perdidas.astro";
+import Propagacion from "@/components/sections/Propagacion.astro";
+import PropagacionFibraOptica from "@/components/sections/Propagacion-Fibra-Optica.astro";
+import Provision from "@/components/sections/Provision.astro";
+import Referencias from "@/components/sections/Referencias.astro";
+import Tipos from "@/components/sections/Tipos.astro";
+---
+
+<Layout title="Comunicaciones con fibra óptica - Telecomunicaciones I">
+  <main>
+    <Encabezado />
+    <Introduccion />
+    <Historia />
+    <Comparacion />
+    <Espectro />
+    <Diagrama />
+    <Tipos />
+    <Propagacion />
+    <PropagacionFibraOptica />
+    <Configuraciones />
+    <Angulo />
+    <Perdidas />
+    <Luminosas />
+    <Opticas />
+    <Detectores />
+    <Laseres />
+    <Provision />
+    <Referencias />
+  </main>
+</Layout>
+
+<style>
+  main {
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+  }
+</style>

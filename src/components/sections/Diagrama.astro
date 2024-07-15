@@ -1,0 +1,60 @@
+---
+import Section from "@/components/Section.astro";
+---
+
+<Section
+  title="Diagrama de bloques del sistema de comunicaciones con fibra óptica"
+>
+  <p>
+    El sistema de comunicaciones con fibra óptica se compone de tres bloques
+    principales: el transmisor, la guía de fibra y el receptor. <br /><br />
+    El transmisor incluye una interfaz analógica o digital, un convertidor de voltaje
+    a corriente, una fuente luminosa y un acoplador de luz a fibra. La señal puede
+    ser modulada de forma digital o analógica. En modulación analógica, la interfaz
+    de entrada ajusta las impedancias y limita la amplitud. En modulación digital,
+    la señal se convierte en pulsos digitales si es analógica. El convertidor de
+    voltaje a corriente conecta eléctricamente la señal de entrada con la fuente
+    luminosa, emitiendo una cantidad de luz proporcional a la corriente de excitación.
+    <br /><br />
+    La guía de fibra es un cable de vidrio o plástico ultrapuro, compuesto por un
+    núcleo, un revestimiento y una chaqueta protectora. <br /><br />
+    El receptor, por su parte, comprende un acoplador de fibra a luz, un detector
+    fotoeléctrico, un convertidor de corriente a voltaje, un amplificador y una interfaz
+    analógica o digital. El acoplador dirige la luz del cable de fibra al detector
+    de luz, que convierte la luz en corriente. El convertidor de corriente a voltaje
+    transforma esta corriente en una señal de salida. La interfaz de salida ajusta
+    las impedancias y los niveles de señal para la modulación analógica o incluye
+    un convertidor de digital a analógico para la modulación digital.
+  </p>
+  <figure>
+    <img src="/public/figura1.png" alt="fibra" width="700" />
+    <figcaption>
+      FIGURA 2-1 Enlace simplificado de comunicaciones con fibra óptica
+    </figcaption>
+  </figure>
+</Section>
+
+<style>
+  figure {
+    border: 1px solid #22afff;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  figure figcaption {
+    margin-top: 10px;
+    font-size: 90%;
+    color: #555;
+  }
+</style>

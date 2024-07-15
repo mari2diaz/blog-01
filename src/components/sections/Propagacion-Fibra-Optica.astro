@@ -1,0 +1,69 @@
+---
+import Section from "@/components/Section.astro";
+---
+
+<Section title="Propagación de la luz a través de una fibra óptica">
+  <p>
+    La luz se puede propagar por un cable de fibra óptica por reflexión o por
+    refracción. La forma en que se propague depende del <b
+      >modo de propagación</b
+    > y del <b>perfil de índice</b>(s) de la fibra.
+  </p>
+  <h3>Modo de propagación</h3>
+  <p>
+    En la terminología de fibras ópticas, la palabra modo simplemente quiere
+    decir camino. Si sólo hay una trayectoria que pueda tener la luz por el
+    cable, se llama <b>modo único</b>, o <b>unimodal</b>. Si hay más de una
+    trayectoria, se llama <b>modo múltiple o multimodal</b>.
+  </p>
+  <h3>Perfil índice</h3>
+  <p>
+    El perfil índice de una fibra óptica es una representación gráfica del
+    índice de refracción en la sección transversal de la fibra. El índice de
+    refracción se grafica en el eje horizontal, y el eje de la distancia radial
+    al centro es el vertical. La fig. 2-6 muestra los perfiles índices del
+    núcleo para tres clases de cables de fibra. <br /><br />
+    Hay dos tipos básicos de perfiles índice: escalonados y graduados. Una fibra
+    de <b>índice escalonado</b> tiene un núcleo central con índice de refracción
+    uniforme. Este núcleo está rodeado por un revestimiento externo con índice de
+    refracción uniforme, pero menor que el del núcleo central. Se ve en la fig. 2-6
+    que en una fibra de índice escalonado hay un cambio abrupto de índice de refracción
+    en la interfaz entre núcleo y revestimiento. En una fibra de
+    <b>índice graduado</b> no hay revestimiento, y el índice de refracción del núcleo
+    no es uniforme; es máximo en el centro y disminuye en forma gradual de acuerdo
+    con la distancia hacia la orilla externa.
+  </p>
+  <figure>
+    <img src="/public/figura6.png" alt="modo de propagacion y perfil indice" />
+    <figcaption>
+      FIGURA 2-6 Perfiles de índice en el núcleo: (a) unimodal, índice
+      escalonado; (b) multimodal, índice escalonado; (c) multimodal, índice
+      graduado
+    </figcaption>
+  </figure>
+</Section>
+
+<style>
+  figure {
+    border: 1px solid #22afff;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  figure figcaption {
+    margin-top: 10px;
+    font-size: 90%;
+    color: #555;
+  }
+</style>

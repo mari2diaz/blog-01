@@ -1,0 +1,54 @@
+{
+    "spectrum": {
+        "equation": "\\[\\lambda = \\frac{c}{f}\\]",
+        "number01": "\\(10^{22}\\)",
+        "number02": "\\(10^{-9}\\)",
+        "number03": "\\(10^{-10}\\)"
+    },
+    "propagation": {
+        "equation01": "\\[E_2 - E_1 = E_p\\]",
+        "equation02": "\\[E_p = h \\cdot f\\]",
+        "equation03": "\\[n = \\frac{c}{v}\\]",
+        "equation04": "\\[n_1 \\sin \\theta_1 = n_2 \\sin \\theta_2\\]",
+        "equation05": "\\[\\sin \\theta_1 = \\frac{n_2}{n_1} \\sin \\theta_2\\]",
+        "equation06": "\\[\\sin \\theta_1 = \\frac{n_2}{n_1}(1)   o   \\sin \\theta_1 = \\frac{n_2}{n_1}\\]",
+        "equation07": "\\[\\sin^-1 \\frac{n_2}{n_1} = \\theta_1 = \\theta_c\\]",
+        "number01": "\\((6.625 \\times 10^{-34} \\, J - s)\\)",
+        "number02": "\\(\\theta_2 = 90^\\circ\\)"
+    },
+    "settings": {
+        "equation01": "\\[\\lambda_c = \\frac{2 \\pi a n_1 \\sqrt{2\\Delta}}{2.405}(\\mu m)\\]",
+        "equation02": "\\[\\Delta = \\frac{n_1 - n_2}{n_1}(adimensional)\\]"
+    },
+    "angle": {
+        "equation01": "\\[\\theta_{\\text{ent}} = \\sin^{-1} \\sqrt{n_1^2 - n_2^2}\\]",
+        "equation02": "\\[\\text{NA} = \\sin \\theta_{\\text{ent}}\\]",
+        "equation03": "\\[\\text{NA} = \\sqrt{n_1^2 - n_2^2}\\]",
+        "equation04": "\\[\\sin^{-1} \\text{NA} = \\theta_{\\text{ent}}\\]",
+        "number": "\\(\\theta_{\\text{ent}}\\)"
+    },
+    "losses": {
+        "equation01": "\\[A(\\text{dB}) = 10 \\log \\left( \\frac{P_{\\text{sal}}}{P_{\\text{ent}}} \\right)\\]",
+        "equation02": "\\[P = P_t \\times 10^{Al/10}\\]",
+        "equation03": "\\[P(dBm) = P_{\\text{ent}}(dBm) - Al\\]",
+        "number01": "\\(P_{\\text{sal}}\\)",
+        "number02": "\\(P_{\\text{ent}}\\)"
+    },
+    "luminous": {
+        "equation01": "\\[Potencia = \\frac{d(energía)}{d(tiempo)}\\]",
+        "equation02": "\\[P = \\frac{dQ}{dt}(watts)\\]",
+        "equation03": "\\[\\text{dBm} = 10 \\log \\frac{P(\\text{watts})}{0.001 \\, \\text{watts}}\\]",
+        "equation04": "\\[\\text{dB}\\mu = 10 \\log \\frac{P(\\text{watts})}{0.000001 \\, \\text{watts}}\\]"
+    },
+    "detectors": {
+        "equation01": "\\[1 \\, \\text{eV} = 1.6 \\times 10^{-19} \\, \\text{J}\\]",
+        "equation02": "\\[E_g = (1.12 \\, \\text{eV}) \\left(1.6 \\times 10^{-19} \\, \\frac{J}{eV}\\right) = 1.792 \\times 10^{-19} \\, \\text{J}\\]",
+        "equation03": "\\[f = \\frac{E}{h}\\]",
+        "equation04": "\\[f = \\frac{1.792 \\times 10^{-19} \\, \\text{J}}{6.6256 \\times 10^{-34} \\, \\text{J/Hz}} = 2.705 \\times 10^{14} \\, \\text{Hz}\\]",
+        "equation05": "\\[\\lambda = \\frac{c}{f} = \\frac{3 \\times 10^{8} \\, \\text{m/s}}{2.705 \\times 10^{14} \\, \\text{Hz}} = 1109 nm/ciclo\\]",
+        "number": "\\(= 6.6256 \\times 10^{-34} \\, \\text{J/Hz}\\)"
+    },
+    "provision": {
+        "equation": "\\[P_r = P_t - pérdidas\\]"
+    }
+}

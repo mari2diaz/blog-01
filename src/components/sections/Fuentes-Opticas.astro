@@ -1,0 +1,215 @@
+---
+import Section from "@/components/Section.astro";
+---
+
+<Section title="Fuentes ópticas">
+  <p>
+    En esencia sólo hay dos dispositivos que se usan con frecuencia para generar
+    luz en sistemas de comunicaciones con fibra óptica: <b
+      >diodos emisores de luz</b
+    > (LED) y <b>diodos de láser de inyección</b> (ILD, de injection laser diode).
+    Ambos dispositivos se fabrican con materiales semiconductores, y tienen sus ventajas
+    y desventajas. Los LED normales tienen anchos espectrales de 30 a 50 nm, mientras
+    que los láseres de inyección sólo tienen anchos espectrales de 1 a 3 nm (1 nm
+    corresponde a una frecuencia aproximada de 178 GHz). Por consiguiente, una fuente
+    luminosa de 1320 nm con ancho de raya espectral de 0.0056 nm tiene una amplitud
+    de banda de frecuencias aproximada de 1 GHz. El ancho de raya es el equivalente,
+    en longitudes de onda, del ancho de banda.
+    <br /><br />
+    La preferencia hacia un dispositivo emisor de luz respecto a otro se determina
+    con los requisitos económicos y de funcionamiento del sistema. El mayor costo
+    de los diodos de láser se compensa con una mayor eficiencia, mientras que los
+    diodos emisores de luz, normalmente, tienen menor costo y menor eficiencia.
+  </p>
+  <h3>Diodos emisores de luz</h3>
+  <p>
+    Un diodo emisor de luz (LED, por light-emitting diode) es un diodo de unión
+    p-n, fabricado casi siempre con un material semiconductor como el arseniuro
+    de aluminio y galio (AlGaAs) o el arseniuro fosfuro de galio (GaAsP). Los
+    LED emiten luz por emisión espontánea: la luz se emite como resultado de la
+    recombinación de electrones con huecos. Cuando tienen polarización directa,
+    los portadores minoritarios se inyectan a través de la unión p-n. Una vez
+    atravesada la unión, esos portadores minoritarios se recombinan con
+    portadores mayoritarios y desprenden energía en forma de luz. <br /><br />
+    Para producir los LED, se forman semiconductores con materiales cuyos átomos
+    tienen tres o cinco electrones de valencia; se conocen como átomos del grupo
+    III o del grupo V, respectivamente, por su lugar en la tabla periódica de los
+    elementos. Para producir longitudes de onda de luz en la región de 800 nm, los
+    LED son de átomos del grupo III, como por ejemplo, galio (GA) y aluminio (Al),
+    y un átomo del grupo V, como el arsénico (As).
+  </p>
+  <h4>LED de homounión</h4>
+  <p>
+    Una unión p-n formada con dos mezclas distintas de igual tipo de átomos se
+    llama estructura de homounión. Las estructuras más sencillas de LED son las
+    de homounión y de crecimiento epitaxial, o dispositivos semiconductores de
+    un solo semiconductor difundida. Los LED de crecimiento epitaxial se
+    fabrican en general con arseniuro de galio dopado con silicio. Una longitud
+    de onda normal emitida con esta estructura es 940 nm, y la potencia normal
+    de salida es aproximadamente, 2 mW (3 dBm) a 100 mA de corriente directa.
+    Las ondas luminosas producidas en fuentes de homounión no producen una luz
+    muy útil para una fibra óptica. La luz se emite en todas direcciones por
+    igual y, en consecuencia, sólo una pequeña fracción del total de luz
+    producida se acopla en la fibra. Además, la relación de electricidad
+    convertida en luz es muy baja. A los dispositivos de homounión se les llama
+    con frecuencia emisores superficiales. <br /><br />
+    Los LED de homounión de difusión plana producen más o menos 500 μW a 900 nm de
+    longitud de onda. La principal desventaja de los LED de homounión es la no direccionalidad
+    de su luz emitida, lo que hace que sean malas opciones como fuente luminosa para
+    sistemas de fibra óptica.
+  </p>
+  <h4>LED de heterounión</h4>
+  <p>
+    Los LED de heterounión se fabrican con material semiconductor tipo p de un
+    conjunto de átomos, y material semiconductor tipo n, de otro conjunto. Los
+    dispositivos de heterounión están estratificados (normalmente dos capas) de
+    tal manera que se amplía el efecto de concentración. Así, se produce un
+    dispositivo que confina a los electrones, los huecos portadores y la luz, en
+    un área mucho menor. La unión se suele fabricar sobre un substrato de
+    material de respaldo, para después emparedarse entre contactos metálicos con
+    los que se conecta el dispositivo a una fuente de electricidad. <br /><br />
+    Con los dispositivos de heterounión, la luz se emite desde la orilla del material
+    y, en consecuencia, se les llama emisores de borde. Un LED de heterounión plana
+    (fig. 2-12) se parece mucho al LED de crecimiento epitaxial, excepto que el diseño
+    geométrico es tal que se concentra la corriente directa en un área muy pequeña
+    de la capa activa. <br /><br />
+    Los dispositivos de heterounión tienen las siguientes ventajas sobre los de homounión:
+  </p>
+  <ul>
+    <li>
+      El aumento de densidad de corriente genera una mancha luminosa más
+      brillante.
+    </li>
+    <li>La menor área emisora facilita acoplar la luz emitida a una fibra.</li>
+    <li>
+      La pequeña área efectiva tiene menor capacitancia, lo que permite usar el
+      LED de heterounión a mayores velocidades.
+    </li>
+  </ul>
+  <figure>
+    <img src="/public/figura12.png" alt="led de heterounion" />
+    <figcaption>FIGURA 2-12 LED de heterounión plana</figcaption>
+  </figure>
+  <h4>LED de superficie emisora y pozo grabado de Burrus</h4>
+  <p>
+    Para las aplicaciones más prácticas, como telecomunicaciones, se requieren
+    velocidades de datos mayores que 100 Mbps. Para estas aplicaciones se
+    desarrolló el LED de pozo grabado, por parte de Burrus y Dawson, de los Bell
+    Laboratories. Es un LED de superficie emisora, y se ve en la fig. 2-13.
+    Emite luz en muchas direcciones, y ayuda a concentrar la luz emitida en un
+    área muy pequeña. También se puede poner lentes en domo, sobre la superficie
+    emisora, para dirigir la luz hacia un área menor. Estos dispositivos son más
+    eficientes que los emisores normales de superficie, y permiten acoplar más
+    potencia a la fibra óptica, pero su fabricación es más difícil y costosa.
+  </p>
+  <figure>
+    <img src="/public/figura13.png" alt="led de burrus" />
+    <figcaption>
+      FIGURA 2-13 LED de Burrus, de superficie emisora y pozo grabado
+    </figcaption>
+  </figure>
+  <h4>LED emisores de borde</h4>
+  <p>
+    El LED emisor de borde, desarrollado por la RCA, se ve en la fig. 2-14.
+    Estos LED emiten una distribución más direccional de luz que los LED de
+    superficie emisora. La fabricación se parece a los diodos planos y de
+    Burrus, pero la superficie emisora es una banda, más que un área circular
+    confinada. La luz se emite de una banda activa y forma un haz elíptico. Los
+    LED de superficie emisora se usan con más frecuencia que los emisores de
+    borde, porque emiten más luz. Sin embargo, las pérdidas por el acoplamiento
+    de los emisores de superficie son mayores, y tienen anchos de banda más
+    angostos. <br /><br />
+    La potencia luminosa radiante que emite un LED es una función lineal de la corriente
+    directa que pasa por el dispositivo. También se ve que la potencia óptica de
+    salida de un LED es, en parte, una función de la temperatura de funcionamiento.
+  </p>
+  <figure>
+    <img src="/public/figura14.png" alt="led emisor de borde" />
+    <figcaption>FIGURA 2-14 LED emisor de borde</figcaption>
+  </figure>
+  <h3>Diodo de láser de inyección</h3>
+  <p>
+    Los diodos láser de inyección (ILD) son fundamentales en las comunicaciones
+    con fibra óptica debido a su capacidad para generar luz láser coherente. A
+    diferencia de otros tipos de láseres que pueden estar hechos de gases,
+    líquidos o sólidos, los ILD están compuestos de semiconductores y operan de
+    manera similar a los LEDs bajo ciertas condiciones. <br /><br />
+
+    Un ILD comienza a comportarse como un LED cuando la corriente aplicada está
+    por debajo de un umbral específico. Sin embargo, una vez que la corriente
+    supera este umbral, el dispositivo oscila y produce emisión láser. En un
+    diodo de unión p-n, la corriente directa provoca la emisión espontánea de
+    luz a una frecuencia determinada por la banda prohibida del material
+    semiconductor. Al alcanzar un nivel crítico de corriente, los portadores
+    minoritarios y los fotones chocan, provocando la recombinación de portadores
+    de energía mayor, generando más fotones a través de un proceso de emisión
+    estimulada. <br /><br />
+    La construcción de un ILD es similar a la de un LED, con la diferencia de que
+    los extremos del ILD están pulidos para crear superficies de espejo que atrapan
+    fotones en la región activa. Estos fotones reflejados estimulan la recombinación
+    de electrones y huecos, produciendo la emisión láser. Este proceso requiere una
+    corriente directa considerable para proporcionar suficientes portadores. <br
+    /><br />
+    La potencia de salida de un ILD se incrementa significativamente una vez superada
+    la corriente de umbral, con pequeñas variaciones en la corriente de activación
+    que producen grandes aumentos en la potencia óptica. La salida de luz del ILD
+    también es más sensible a las variaciones de temperatura en comparación con los
+    LEDs. La distribución de irradiación de un ILD es más dirigida y concentrada,
+    emitiendo luz en un haz angosto, a diferencia de la distribución más difusa de
+    un LED.
+  </p>
+  <h4>Ventajas de los ILD</h4>
+  <ul>
+    <li>
+      Como los ILD tienen una distribución de irradiación más dirigida, es más
+      fácil de acoplar su luz en una fibra óptica. Esto reduce las pérdidas por
+      acoplamiento y permite usar fi- bras más pequeñas.
+    </li>
+    <li>
+      La potencia radiante de salida de un ILD es mayor que la de un LED. Una
+      potencia normal de salida de un ILD es 5 mW (7 dBm), en comparación con
+      0.5 mW (–3 dBm) para los LED. Eso permite que los ILD proporcionen una
+      mayor potencia de activación, y usarlos en sistemas que funcionen a través
+      de mayores distancias.
+    </li>
+    <li>Los ILD se pueden usar a frecuencias mayores de bits que los LED.</li>
+    <li>
+      Los ILD generan luz monocromática, lo cual reduce la dispersión cromática
+      o de longitudes de onda.
+    </li>
+  </ul>
+  <h4>Desventajas de los ILD</h4>
+  <ul>
+    <li>Los ILD cuestan normalmente 10 veces más que los LED.</li>
+    <li>
+      Como los ILD trabajan con mayores potencias, suelen tener duraciones mucho
+      menores que los LED.
+    </li>
+    <li>Los ILD dependen más de la temperatura que los LED.</li>
+  </ul>
+</Section>
+
+<style>
+  figure {
+    border: 1px solid #22afff;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  figure figcaption {
+    margin-top: 10px;
+    font-size: 90%;
+    color: #555;
+  }
+</style>

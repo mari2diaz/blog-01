@@ -1,0 +1,89 @@
+---
+import { provision } from "@contenido";
+import Section from "@/components/Section.astro";
+
+const { equation } = provision;
+---
+
+<Section title="Provisión para enlace en el sistema de fibra óptica">
+  <p>
+    Los sistemas de comunicaciones con fibra óptica operan mediante una fuente y
+    un destino separados por diversos componentes y dispositivos, los cuales
+    pueden introducir pérdidas o ganancias a la señal. Existen dos
+    configuraciones principales en estos sistemas: con y sin repetidoras. <br
+    /><br />
+    En un sistema sin repetidoras, la fuente y el destino están conectados directamente
+    a través de uno o más tramos de cable óptico, sin la necesidad de amplificadores
+    ni regeneradores intermedios. Este tipo de sistema se emplea en distancias cortas
+    donde la señal no requiere ser amplificada, ya que la calidad de la transmisión
+    se mantiene dentro de los límites aceptables sin la intervención de dispositivos
+    adicionales. <br /><br />
+    Por otro lado, un sistema con repetidora incluye una repetidora que se encarga
+    de amplificar o regenerar la señal para mantener su integridad en largas distancias.
+    Este tipo de configuración es esencial cuando la fuente y el destino están separados
+    por grandes distancias, asegurando que la señal llegue con la calidad necesaria
+    al receptor. <br /><br />
+    Para calcular las necesidades de enlace en un sistema sin repetidoras, se consideran
+    varios elementos, como una fuente luminosa (por ejemplo, un LED o un ILD), un
+    detector de luz (como un APD), cables de fibra óptica y conectores. La provisión
+    de enlace implica tener en cuenta la potencia luminosa de la fuente, la sensibilidad
+    del detector de luz y las pérdidas asociadas tanto al cable como a los conectores,
+    asegurando así una transmisión eficiente y confiable. Las pérdidas características
+    de los enlaces de fibra óptica incluyen las siguientes: <br /><br />
+  </p>
+  <ul>
+    <li>
+      Pérdidas en el cable. Las pérdidas en el cable dependen de la longitud,
+      del material y de la pureza del material del cable. En general, se
+      especifican en dB/km, y pueden variar desde décimas de dB hasta varios dB
+      por km.
+    </li>
+    <li>
+      Pérdidas en el conector. A veces se usan conectores mecánicos para unir
+      dos tramos de cable. Si la conexión mecánica no es perfecta, puede escapar
+      energía luminosa y causar una reducción de la potencia óptica. Las
+      pérdidas en el conector suelen variar entre unas décimas de dB hasta 2 dB
+      para cada conector.
+    </li>
+    <li>
+      Pérdida en interfaz de fuente a cable. La interfaz mecánica que se usa
+      para contener la fuente de luz y fijarla al cable casi nunca es perfecta.
+      En consecuencia, un pequeño porcentaje de la potencia óptica no se acopla
+      al cable, y representa una pérdida de potencia en el sistema de algunas
+      décimas de dB.
+    </li>
+    <li>
+      Pérdida en interfaz de cable a detector de luz. La interfaz mecánica para
+      contener el detector de luz y fijarlo al cable tampoco es perfecta y, en
+      consecuencia, evita que un pequeño porcentaje de la potencia que sale del
+      cable entre al detector de luz. Esto, naturalmente, representa una pérdida
+      para el sistema, que suele ser de algunas décimas de dB.
+    </li>
+    <li>
+      Pérdida en empalmes. Si se requiere más que un tramo continuo de cable, se
+      pueden fundir (empalmar) los tramos. Como los empalmes no son perfectos,
+      se pueden introducir pérdidas que van desde un par de décimas de dB hasta
+      varios dB en la señal.
+    </li>
+    <li>
+      Dobleces del cable. Cuando un cable óptico se dobla formando un ángulo muy
+      agudo, sus características internas cambian radicalmente. Si los dobleces
+      son grandes, ya no se lograrán las reflexiones totales de algunos de los
+      rayos de luz, y se refractarán. La luz refractada en la interfaz entre el
+      núcleo y el revestimiento entra al revestimiento y causa una pérdida neta
+      de la señal, de algunas décimas de dB hasta varios dB.
+    </li>
+  </ul>
+  <p>
+    <br />Como en cualquier provisión de enlace o de sistema, la potencia útil
+    disponible en el receptor depende de la potencia de transmisión y de las
+    pérdidas en el enlace. La ecuación correspondiente es
+  </p>
+  <p>{equation}</p>
+  <p>donde:</p>
+  <ul>
+    <li>\( P_r \) es la potencia recibida (dBm).</li>
+    <li>\( P_t \) es la potencia transmitida (dBm).</li>
+    <li>\( pérdidas \) es la suma de todas las pérdidas (dB).</li>
+  </ul>
+</Section>
